@@ -2,7 +2,7 @@
 def bfsShortestPath(graph, startNode, endNode): #Takes in 3 elements the graph, startNode, and endNode
     vistedNodes = [] #Stores all visted nodes to make sure doesn't loop over nodes
     queue = [startNode] #Initilies the queue with the starting node
-    predecessorNodes = {} #Stores the parent of every node visited, Fills when visting a new neighbour. Is used to back track the shortest path from the start node to the end node
+    predecessorNodes = {} #Dictionary that stores the parent of every node visited, Fills when visting a new neighbour. Is used to back track the shortest path from the start node to the end node
 
     while queue: #While the queue in not empty
         currentNode = queue.pop(0) #Pops the first element from the queue and stores it in currentNode
