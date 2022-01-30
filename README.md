@@ -1,12 +1,12 @@
 # Breadth First Search Shortest Path
 
-Example
+Example:
 
 ```python
 bfsShortestPath(testGraph, 'A', 'C')
 ```
 
-Expected output
+Output:
 
 ```python
 ['A', 'B', 'D', 'G', 'H', 'C']
