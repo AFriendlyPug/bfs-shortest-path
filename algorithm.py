@@ -24,7 +24,7 @@ def shortestPath(predecessorNodes, startNode, endNode):
     return path #Returns path
 
 #Graph
-testGraph = { #Dictionary to stores all the nodes and it's connections
+testGraph = { #Dictionary to stores all the nodes and there connections
     'A': ['B', 'D', 'G', 'H'],
     'B': ['D', 'H'],
     'C': ['D', 'E', 'G'],
