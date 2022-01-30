@@ -1,5 +1,5 @@
 #Functions
-def bfsShortestPath(graph, startNode, endNode): #Takes in 3 elements the graph, startNode, and endNode
+def bfsShortestPath(graph, startNode, endNode): #Takes in 3 parameters the graph, startNode, and endNode
     vistedNodes = [] #Stores all visted nodes to make sure doesn't loop over nodes
     queue = [startNode] #Initilies the queue with the starting node
     predecessorNodes = {} #Dictionary that stores the parent of every node visited, Fills when visting a new neighbour. Is used to back track the shortest path from the start node to the end node
@@ -7,10 +7,10 @@ def bfsShortestPath(graph, startNode, endNode): #Takes in 3 elements the graph, 
     while queue: #While the queue in not empty
         currentNode = queue.pop(0) #Pops the first element from the queue and stores it in currentNode
         vistedNodes.append(currentNode) #Mark the currentNode as visted
-        for neighbor in graph[currentNode]: #Itterate through all neighbours
-            if neighbor not in vistedNodes: #Check if the neighbour is already visited
-                queue.append(neighbor) #Append it to the queue
-                predecessorNodes[neighbor] = currentNode #Sets the parent of the current neighbour to the current node
+        for neighbour in graph[currentNode]: #Itterate through all neighbours
+            if neighbour not in vistedNodes: #Check if the neighbour is already visited
+                queue.append(neighbour) #Append it to the queue
+                predecessorNodes[neighbour] = currentNode #Sets the parent of the current neighbour to the current node
 
     print(shortestPath(predecessorNodes, startNode, endNode)) #Function call
 
